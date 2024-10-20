@@ -1,4 +1,3 @@
-/* Reseta margens e paddings */
 * {
     margin: 0;
     padding: 0;
@@ -29,17 +28,22 @@ nav ul li {
     margin: 0 10px;
 }
 
-nav ul li a,
 #colorToggle {
+    background-color: #333;
+}
+
+nav ul li a, #colorToggle {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+    padding: 8px;
+    border-radius: 50px;
+    border: none;
 }
 
-nav ul li a:hover,
-#colorToggle:hover {
-    color: #f9d342;
+nav ul li a:hover, #colorToggle:hover {
+    color: rgb(0, 0, 0);
 }
 
 h1, h2 {
@@ -49,6 +53,20 @@ h1, h2 {
 section {
     padding: 2rem;
     text-align: center;
+}
+
+#home {
+    background: linear-gradient(135deg, rgb(0, 37, 0), green);
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#home:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
 .services-container {
@@ -63,6 +81,8 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    flex: 1;
+    margin: 0 10px;
 }
 
 .service:hover {
@@ -70,8 +90,9 @@ section {
 }
 
 .cta {
-    padding: 10px 20px;
     border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
     background-color: #333;
     color: #fff;
     cursor: pointer;
@@ -79,7 +100,9 @@ section {
 }
 
 .cta:hover {
-    background-color: #f9d342;
+    background-color: green;
+    border-radius: 50px;
+    box-shadow: 0 6px 15px whitesmoke
 }
 
 footer {
@@ -90,7 +113,7 @@ footer {
     margin-top: 2rem;
 }
 
-/* Modo escuro */
+/* Dark mode */
 body.dark-mode {
     background-color: #333;
     color: #f4f4f4;
@@ -100,12 +123,116 @@ body.dark-mode header {
     background-color: #444;
 }
 
-body.dark-mode nav ul li a,
-body.dark-mode #colorToggle {
+body.dark-mode nav ul li a, body.dark-mode #colorToggle {
     color: #f4f4f4;
 }
 
 body.dark-mode .service {
     background-color: #444;
     color: #f4f4f4;
+}
+
+/* Estilos da seção sobre */
+#about {
+    background-color: #f9f9f9; /* Cor padrão */
+    padding: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transição suave */
+}
+
+body.dark-mode #about {
+    background-color: #444; /* Cor no modo escuro */
+    color: #f4f4f4; /* Cor do texto no modo escuro */
+}
+
+/* Estilos criativos da seção de contato */
+.contact-section {
+    background: linear-gradient(135deg, rgb(0, 37, 0), green);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    margin: 0 auto;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.contact-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-section label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+}
+
+.contact-section input, 
+.contact-section textarea {
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-section input:focus, 
+.contact-section textarea:focus {
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.5);
+}
+
+.contact-section textarea {
+    height: 150px;
+    resize: none;
+}
+
+.submit-btn {
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: green;
+    box-shadow: 0 6px 15px whitesmoke
+}
+
+.submit-btn i {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Professional Website</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script defer src="java.js"></script>
+    <!-- Link para o Font Awesome (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="colorToggle">Trocar tema</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Bem vindo(a) ao meu Website profissional <h1>
+        <button class="cta">Saiba Mais</button>
+    </section>
+
+    <section id="services">
+        <h2>Meus serviços</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Práticas</h3>
+                <p>Aqui está um espaço reservado às práticas exercidas por mim.</p>
+            </div>
+            <div class="service">
+                <h3>Visitas Técnicas</h3>
+                <p>Aqui está um espaço reservado para minhas visitas técnicas.</p>
+            </div>
+            <div class="service">
+                <h3>IFNMG - Salinas</h3>
+                <p>Aqui está um espaço reservado ao Campus onde estudo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Sobre mim</h2>
+        <p>xxxxx.</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contato</h2>
+        <form>
+            <label for="name"><i class="fas fa-user"></i> Nome</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message"><i class="fas fa-comment"></i> Mensagem</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gabriela Morais.</p>
+    </footer>
+</body>
+</html>

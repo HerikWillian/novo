@@ -1,4 +1,4 @@
-// Alternar entre o tema claro e o tema escuro
+// Toggle between light and dark theme
 const colorToggle = document.getElementById('colorToggle');
 
 colorToggle.addEventListener('click', () => {
