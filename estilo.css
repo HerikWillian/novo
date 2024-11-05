@@ -135,7 +135,7 @@ body.dark-mode .service {
 /* Estilos da seção sobre */
 #about {
     background-color: #f9f9f9; /* Cor padrão */
-    padding: 2rem 0;
+    margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 2rem;
